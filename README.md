@@ -5,6 +5,9 @@ rmtrash stands for "rm trash" which acts just like the system built-in rm comman
 1、使用说明  
 （1）安装  
 wget --no-check-certificate https://raw.githubusercontent.com/LaiJingli/rmtrash/master/rmtrash.sh  
+或者
+git clone https://gitee.com/Algorhi/rmtrash.git
+
 mv rmtrash.sh /bin/  
 chmod +x /bin/rmtrash.sh  
 
@@ -12,7 +15,10 @@ a、如果仅对单个用户启用回收站，只需第一次执行如下命令�
 /bin/rmtrash.sh  
 
 b、如果想对全局所有用户启用回收站，需要修改bashrc全局配置文件后即可：  
+在命令行输入一下命令，将rmtrash.sh放到环境变量所包含的全局配置文件bash↷
 echo "alias rm=/bin/rmtrash.sh" >>/etc/bashrc  
+zsh用户在命令号输入：
+echo "alias rm=/bin/rmtrash.sh" >>/etc/zsh/zshrc 
 
 （2）使用  
 rm -h  

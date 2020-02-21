@@ -19,6 +19,9 @@ b、如果想对全局所有用户启用回收站，需要修改bashrc全局配�
 echo "alias rm=/bin/rmtrash.sh" >>/etc/bashrc  
 zsh用户在命令行输入：
 echo "alias rm=/bin/rmtrash.sh" >>/etc/zsh/zshrc 
+c、source /etc/bashrc 
+zsh用户命令好输入：
+source /etc/zsh/zshrc
 
 （2）使用  
 rm -h  
